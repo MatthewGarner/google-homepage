@@ -3,6 +3,10 @@
 <head>
     <title>Google Homepage</title>
     <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .Main_image {
             display: block;
             margin-left: auto;
@@ -15,19 +19,53 @@
             margin-right: auto;
             width: 50%;
         }
+        .top-headers {
+            display: inline-block;
+            padding-left: 15px;
+            left: 10px;
+            color: black;
+        }
+        .top-headers-left { 
+            position: relative;
+            margin-right: 1200px;
+            border-right: 100px;
+            left:50px
+            
+        }
+        .top-headers-right {      
+            text-align: right;
+        }
+        .top-headers a {
+            color: black;
+            text-decoration: none;
+            
+        }
         .search-bar {
             padding: 50px;
         }
-        body{
-            text-align: center;
+        a:hover {
+            text-decoration: underline;
         }
+        #about {
+            padding-right: 20px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="top-headers">
-        <p>About Store</p>
-        <p>Gmail Images Tiles User</p>
-    </div>
+        <div class="top-headers-left">
+            <a id="about" href="https://www.google.com/about">About</a>
+            <a href="https://www.google.com/store">Store</a>
+            
+        </div>
+        <div class="top-headers-right">
+            <a href="https://www.google.com/gmail">Gmail</a>
+            <a href="https://www.google.com/images">Images</a>
+            <img src=a href="https://www.google.com/images">Tiles</img>
+            <img src=x href="https://www.google.com/images">User</img>
+        </div>
+    </div> 
     <div class="main-logo">
         <a href="https://www.google.com"><img class="Main_image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google company logo"></a>
     </div>

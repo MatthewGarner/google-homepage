@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Google Homepage</title>
+    <meta charset="utf-8">
     <style>
         body {
             text-align: center;
@@ -15,7 +16,7 @@
         }
         .search-form {
             display: inline-block;
-            margin-left: auto;
+            margin-left: 10px;
             margin-right: auto;
             width: 50%;
         }
@@ -27,7 +28,7 @@
         }
         .top-headers-left { 
             position: relative;
-            margin-right: 1200px;
+            margin-right: 1000px;
             border-right: 100px;
             left:50px
             
@@ -55,31 +56,30 @@
 </head>
 <body>
     <div class="top-headers">
-        <div class="top-headers-left">
+        <span class="top-headers-left">
             <a id="about" href="https://www.google.com/about">About</a>
             <a href="https://www.google.com/store">Store</a>
             
-        </div>
-        <div class="top-headers-right">
+        </span>
+        <span class="top-headers-right">
             <a href="https://www.google.com/gmail">Gmail</a>
             <a href="https://www.google.com/images">Images</a>
             <img src=a href="https://www.google.com/images">Tiles</img>
             <img src=x href="https://www.google.com/images">User</img>
-        </div>
+        </span>
     </div> 
     <div class="main-logo">
         <a href="https://www.google.com"><img class="Main_image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google company logo"></a>
     </div>
     <div class="search-bar">
-        <div class="search-area">
-            <span class="Search icon">
-                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" height = 40px width = 40px viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                </svg>
-            </span>
+        <span class="Search icon">
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" height = 40px width = 40px viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+        </span>
             <form class="search-form">
-                <div class="search-form">
-                    <input type="search" name="search" id="search">
+              <div class="search-form">
+                   <input type="search" name="search" id="search">
                 </div>
              <div class="search-buttons">
                 <button type="submit">
@@ -88,7 +88,6 @@
                     I'm Feeling Lucky</button>
              </div>
             </form>
-        </div>
     </div>
      
 </body>

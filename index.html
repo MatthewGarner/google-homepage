@@ -7,6 +7,8 @@
         body {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            margin-top: 8px;
         }
         .main-logo {
             display: block;
@@ -17,8 +19,30 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 272px
+            width: 272px;
         }
+        .mag-glass {
+        background-image: url(http://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+        display: inline-block;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        right: 565px;
+        top: 12px;
+        opacity: 0.3;
+        background-position: -250px -36px;
+        }
+        .microphone {
+        background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+        display: inline-block;
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        right: 20px;
+        top: 10px;
+        background-size: 24px 24px;
+        cursor: pointer;
+    }
         .search-bar {
             width: 600px;
             position: relative;
@@ -28,6 +52,27 @@
             margin: 30px auto;
             box-sizing: inherit;
         }
+        .search-text {
+        width: 600px;
+        display: inline-block;
+        height: 40px;
+        font-size: 16px;
+        border: 10px;
+        background-color: transparent;
+        box-sizing: inherit;
+        text-align: left;
+        padding-left: 40px;
+        font-family: sans-serif;
+        outline: none;
+        }
+        .search-buttons {
+        display: flex;
+        width: 600px;
+        height: 40px;
+        margin: 30px auto;
+        justify-content: center;
+        }
+
         .top-headers {
             display: inline-block;
             padding-left: 15px;
@@ -47,11 +92,6 @@
         .top-headers a {
             color: black;
             text-decoration: none;
-            
-        }
-        .search-bar {
-            padding: 20px;
-            
         }
         a:hover {
             text-decoration: underline;
@@ -80,20 +120,17 @@
         <a href="https://www.google.com"><img class="Main_image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google company logo"></a>
     </div>
     <div class="search-bar">
-        <!--<span class="Search icon">
-            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" height = 40px width = 40px viewBox="0 0 24 24">
-                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-            </svg>
-        </span> -->
-        
-                   <input type="search" name="search" id="search">
+        <input type="search" class="search-text">
+           
+        </input>
+        <div class="mag-glass"></div>
+        <div class="microphone"></div>               
+    </div>
     <div class="search-buttons">
         <button type="submit">Search</button>
-         <button type="submit">I'm Feeling Lucky</button>
-     </div>
-     
+        <button type="submit">I'm Feeling Lucky</button>
+    </div>    
 </body>
-
 <footer>
     <div id="Country">United Kingdom</div>
     <div class="footer-left"> Advertising, Business, How Search Works</div>
